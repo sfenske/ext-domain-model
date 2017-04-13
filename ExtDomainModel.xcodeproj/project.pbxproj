@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		17C58D8E1EA015E000A13D2B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C58D8D1EA015E000A13D2B /* main.swift */; };
+		17C58DA11EA0174400A13D2B /* SimpleDomainModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C58DA01EA0174400A13D2B /* SimpleDomainModelTests.swift */; };
+		17C58DA31EA0177100A13D2B /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C58DA21EA0177000A13D2B /* PersonTests.swift */; };
+		17C58DA51EA0177600A13D2B /* MoneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C58DA41EA0177600A13D2B /* MoneyTests.swift */; };
+		17C58DA71EA0177C00A13D2B /* JobTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C58DA61EA0177C00A13D2B /* JobTests.swift */; };
+		17C58DA81EA017CD00A13D2B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C58D8D1EA015E000A13D2B /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +30,23 @@
 /* Begin PBXFileReference section */
 		17C58D8A1EA015E000A13D2B /* ExtDomainModel */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ExtDomainModel; sourceTree = BUILT_PRODUCTS_DIR; };
 		17C58D8D1EA015E000A13D2B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		17C58D981EA016D500A13D2B /* ExtDomainModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExtDomainModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17C58D9C1EA016D500A13D2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17C58DA01EA0174400A13D2B /* SimpleDomainModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleDomainModelTests.swift; sourceTree = "<group>"; };
+		17C58DA21EA0177000A13D2B /* PersonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
+		17C58DA41EA0177600A13D2B /* MoneyTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoneyTests.swift; sourceTree = "<group>"; };
+		17C58DA61EA0177C00A13D2B /* JobTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		17C58D871EA015E000A13D2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17C58D951EA016D500A13D2B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				17C58D8C1EA015E000A13D2B /* ExtDomainModel */,
+				17C58D991EA016D500A13D2B /* ExtDomainModelTests */,
 				17C58D8B1EA015E000A13D2B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				17C58D8A1EA015E000A13D2B /* ExtDomainModel */,
+				17C58D981EA016D500A13D2B /* ExtDomainModelTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +80,18 @@
 				17C58D8D1EA015E000A13D2B /* main.swift */,
 			);
 			path = ExtDomainModel;
+			sourceTree = "<group>";
+		};
+		17C58D991EA016D500A13D2B /* ExtDomainModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				17C58DA61EA0177C00A13D2B /* JobTests.swift */,
+				17C58DA21EA0177000A13D2B /* PersonTests.swift */,
+				17C58DA41EA0177600A13D2B /* MoneyTests.swift */,
+				17C58DA01EA0174400A13D2B /* SimpleDomainModelTests.swift */,
+				17C58D9C1EA016D500A13D2B /* Info.plist */,
+			);
+			path = ExtDomainModelTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +114,23 @@
 			productReference = 17C58D8A1EA015E000A13D2B /* ExtDomainModel */;
 			productType = "com.apple.product-type.tool";
 		};
+		17C58D971EA016D500A13D2B /* ExtDomainModelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17C58D9D1EA016D500A13D2B /* Build configuration list for PBXNativeTarget "ExtDomainModelTests" */;
+			buildPhases = (
+				17C58D941EA016D500A13D2B /* Sources */,
+				17C58D951EA016D500A13D2B /* Frameworks */,
+				17C58D961EA016D500A13D2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExtDomainModelTests;
+			productName = ExtDomainModelTests;
+			productReference = 17C58D981EA016D500A13D2B /* ExtDomainModelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -94,6 +143,11 @@
 				TargetAttributes = {
 					17C58D891EA015E000A13D2B = {
 						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+					};
+					17C58D971EA016D500A13D2B = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 7G5624GEQ9;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -111,9 +165,20 @@
 			projectRoot = "";
 			targets = (
 				17C58D891EA015E000A13D2B /* ExtDomainModel */,
+				17C58D971EA016D500A13D2B /* ExtDomainModelTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17C58D961EA016D500A13D2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		17C58D861EA015E000A13D2B /* Sources */ = {
@@ -121,6 +186,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				17C58D8E1EA015E000A13D2B /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17C58D941EA016D500A13D2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17C58DA31EA0177100A13D2B /* PersonTests.swift in Sources */,
+				17C58DA81EA017CD00A13D2B /* main.swift in Sources */,
+				17C58DA11EA0174400A13D2B /* SimpleDomainModelTests.swift in Sources */,
+				17C58DA51EA0177600A13D2B /* MoneyTests.swift in Sources */,
+				17C58DA71EA0177C00A13D2B /* JobTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +310,34 @@
 			};
 			name = Release;
 		};
+		17C58D9E1EA016D500A13D2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7G5624GEQ9;
+				INFOPLIST_FILE = ExtDomainModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sydniefenske.ExtDomainModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		17C58D9F1EA016D500A13D2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7G5624GEQ9;
+				INFOPLIST_FILE = ExtDomainModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sydniefenske.ExtDomainModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -250,6 +355,14 @@
 			buildConfigurations = (
 				17C58D921EA015E000A13D2B /* Debug */,
 				17C58D931EA015E000A13D2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		17C58D9D1EA016D500A13D2B /* Build configuration list for PBXNativeTarget "ExtDomainModelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17C58D9E1EA016D500A13D2B /* Debug */,
+				17C58D9F1EA016D500A13D2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

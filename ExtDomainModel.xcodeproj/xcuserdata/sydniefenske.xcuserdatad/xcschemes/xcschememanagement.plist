@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>ExtDomainModelTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>17C58D891EA015E000A13D2B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>17C58D971EA016D500A13D2B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
